@@ -1,16 +1,16 @@
 package org.algorithms.basic.commands;
 
-import org.algorithms.basic.algorithms.ArraySum;
+import org.algorithms.basic.algorithms.SumOfDigits;
 
 import java.util.*;
 
-public class ArraySumCommand implements Command {
+public class SumOfDigitsCommand implements Command {
     Scanner scanner;
-    ArraySum algoArraySum;
+    SumOfDigits algoSumOfDigits;
 
-    public ArraySumCommand(Scanner scanner) {
+    public SumOfDigitsCommand(Scanner scanner) {
         this.scanner = scanner;
-        algoArraySum = new ArraySum();
+        algoSumOfDigits = new SumOfDigits();
     }
 
     @Override
@@ -25,7 +25,7 @@ public class ArraySumCommand implements Command {
                 numbers.add(num);
             }
         } catch(InputMismatchException ex) {
-            System.out.println("The sum of the elements is " + algoArraySum.getSumOfElements(numbers.stream().mapToInt(Integer::intValue).toArray()));
+            System.out.println("The sum of the elements is " + algoSumOfDigits.getSumOfElements(numbers.stream().mapToInt(Integer::intValue).toArray()));
             scanner.nextLine(); // consume the rest of the line
         }
     }

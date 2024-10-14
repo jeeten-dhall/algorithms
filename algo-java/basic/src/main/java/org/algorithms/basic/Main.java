@@ -1,6 +1,6 @@
 package org.algorithms.basic;
 
-import org.algorithms.basic.commands.ArraySumCommand;
+import org.algorithms.basic.commands.SumOfDigitsCommand;
 import org.algorithms.basic.commands.CommandInvoker;
 import org.algorithms.basic.commands.PalindromeCommand;
 
@@ -17,7 +17,7 @@ public class Main {
 
         // Register the commands
         invoker.registerCommand(Problem.PALINDROME, new PalindromeCommand(scanner));
-        invoker.registerCommand(Problem.ARRAY_SUM, new ArraySumCommand(scanner));
+        invoker.registerCommand(Problem.SUM_OF_DIGITS, new SumOfDigitsCommand(scanner));
 
         boolean exit = false;
         try {

@@ -9,4 +9,10 @@ public class Palindrome {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        Palindrome palin = new Palindrome();
+        boolean isPalin = palin.isPalindrome("madame");
+        System.out.println(isPalin);
+    }
 }
